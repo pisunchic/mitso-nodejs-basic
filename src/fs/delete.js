@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const deleteFile = async () => {
-    const filePath = join(__dirname, 'files', 'fresh.txt');
+    const filePath = join(__dirname, 'files', 'fileToRemove.txt');
     try {
         await unlink(filePath);
         console.log('File deleted successfully!');
